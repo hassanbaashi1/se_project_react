@@ -44,4 +44,4 @@ Click on any clothing card to view it in detail.
 
 ## 🔗 Live Link or GitHub Repository
 
-[View the code on GitHub](https://github.com/your-username/wtwr)
+[View the code on GitHub](https://github.com/hassanbaashi1/se_project_react?tab=readme-ov-file)
