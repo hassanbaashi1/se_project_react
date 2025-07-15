@@ -78,11 +78,10 @@
 .modal__input {
   padding: 8px 12px;
   font-size: 14px;
-  border: 1px solid #000;
-  border-radius: 4px;
-  color: #000;
-  width: 100%;
-  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  outline: none;
 }
 
 /* Radio button group */
