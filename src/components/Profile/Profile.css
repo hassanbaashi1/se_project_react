@@ -1,0 +1,23 @@
+.profile {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 80vh;
+  background-color: #f9f9f9;
+}
+
+.profile__sidebar {
+  flex: 0 0 229px;
+}
+
+.profile__clothing-items {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

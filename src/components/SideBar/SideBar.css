@@ -1,0 +1,39 @@
+.sidebar {
+  width: 229px;
+  height: 56px;
+  top: 119px;
+  left: 40px;
+  opacity: 1;
+  padding: 16px;
+  border: 1px solid #00000080;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #00000080;
+}
+
+.sidebar__username {
+  width: 157px;
+  height: 25px;
+  top: 135px;
+  left: 112px;
+  opacity: 1;
+  font-family: Cabinet Grotesk;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

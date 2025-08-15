@@ -1,0 +1,18 @@
+.modal__delete-btn {
+  width: 98.1234359741211px;
+  height: 13.619999885559082px;
+  top: 628.6px;
+  left: 837.32px;
+  opacity: 1;
+  color: #ff4d00;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-self: right;
+}
+
+.modal__delete-btn:hover {
+  color: blue;
+}

@@ -12,8 +12,14 @@
   margin: 0;
 }
 
-.header__add-clothes-btn {
+.header__right {
   margin: 0 20px 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__add-clothes-btn {
   border: none;
 }
 
