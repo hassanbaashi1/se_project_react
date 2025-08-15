@@ -22,11 +22,19 @@ export default function AddItemModal({
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddItemModalSubmit({ name, imageUrl, weather });
-    setName("");
-    setImageUrl("");
-    setWeather("");
+
+    onAddItemModalSubmit({ name, imageUrl, weather })
+      .then(() => {
+        setName("");
+        setImageUrl("");
+        setWeather("");
+        onClose();
+      })
+      .catch((err) => {
+        console.error("Failed to add item:", err);
+      });
   };
+
   return (
     <ModalWithForm
       title="New garment"

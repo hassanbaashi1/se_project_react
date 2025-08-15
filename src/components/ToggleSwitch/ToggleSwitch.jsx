@@ -10,9 +10,10 @@ export default function ToggleSwitch() {
   return (
     <label className="toggle__switch">
       <input
-        onChange={handleToggleSwitchChange}
         type="checkbox"
         className="toggle__switch-checkbox"
+        onChange={handleToggleSwitchChange}
+        checked={currentTemperatureUnit === "C"}
       />
       <span className="toggle__switch-circle"></span>
       <span

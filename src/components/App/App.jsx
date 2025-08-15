@@ -80,7 +80,6 @@ function App() {
     getItems()
       .then((items) => {
         setClothingItems(items);
-        console.log(items);
       })
       .catch(console.error);
 
