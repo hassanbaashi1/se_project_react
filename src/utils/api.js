@@ -1,15 +1,15 @@
 const baseUrl = "http://localhost:3001";
 
-const checkResponse = (res) => {
+export const checkResponse = (res) => {
   if (!res.ok) {
     throw new Error(`Error: ${res.status}`);
   }
   return res.json();
 };
 
-export function getItems() {
+export const getItems = () => {
   return fetch(`${baseUrl}/items`).then(checkResponse);
-}
+};
 
 export const addItem = ({ name, imageUrl, weather }) => {
   return fetch(`${baseUrl}/items`, {
@@ -19,8 +19,8 @@ export const addItem = ({ name, imageUrl, weather }) => {
   }).then(checkResponse);
 };
 
-export function deleteItem(id) {
+export const deleteItem = (id) => {
   return fetch(`${baseUrl}/items/${id}`, {
     method: "DELETE",
   }).then(checkResponse);
-}
+};
