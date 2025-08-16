@@ -16,17 +16,11 @@ export const addItem = ({ name, imageUrl, weather }) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, imageUrl, weather }),
-  }).then((res) => {
-    if (!res.ok) throw new Error("Failed to add item");
-    return res.json();
-  });
+  }).then(checkResponse);
 };
+
 export function deleteItem(id) {
   return fetch(`${baseUrl}/items/${id}`, {
     method: "DELETE",
-  }).then((res) => {
-    if (!res.ok) {
-      throw new Error(`Error: ${res.status}`);
-    }
-  });
+  }).then(checkResponse);
 }
