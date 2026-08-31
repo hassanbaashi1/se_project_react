@@ -1,5 +1,5 @@
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./Header/Header";
 import ItemModal from "./ItemModal";
 import Main from "./Main";
 import ModalWithForm from "./ModalWithForm";
