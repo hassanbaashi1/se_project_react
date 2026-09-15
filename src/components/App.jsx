@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import Header from "./Header/Header";
 import ItemModal from "./ItemModal";
-import Main from "./Main";
+import Main from "./Main/Main";
 import ModalWithForm from "./ModalWithForm";
 
 function App() {
