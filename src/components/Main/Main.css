@@ -1,6 +1,20 @@
 .main__weather {
-  margin: 40px 40px 0;
+  margin: 40px 40px 20px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.main__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 323px);
+  gap: 20px;
+  margin: 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.main__item {
+  margin: 0;
+  padding: 0;
 }
