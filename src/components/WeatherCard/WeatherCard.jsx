@@ -2,12 +2,19 @@ import "./WeatherCard.css";
 import weatherImage from "../../assets/day/clear.png";
 
 function WeatherCard({ weatherData }) {
+  const temperature = weatherData.main?.temp;
+
   return (
     <section className="weather-card">
       <p className="weather-card__temp">
-        {Math.round(weatherData.main?.temp)}° F
+        {typeof temperature === "number" ? `${Math.round(temperature)}° F` : ""}
       </p>
-      <img className="weather-card__image" src={weatherImage} alt="weather" />
+
+      <img
+        className="weather-card__image"
+        src={weatherImage}
+        alt="Current weather"
+      />
     </section>
   );
 }
