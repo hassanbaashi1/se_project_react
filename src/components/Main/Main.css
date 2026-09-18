@@ -7,8 +7,9 @@
 
 .main__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 323px);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 17px;
+  grid-auto-rows: 328px;
   margin: 0 40px;
   padding: 0;
   list-style: none;
@@ -17,4 +18,11 @@
 .main__item {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .main__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
